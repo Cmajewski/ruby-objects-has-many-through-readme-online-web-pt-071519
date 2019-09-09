@@ -22,7 +22,6 @@ class Customer
   end
 
   def waiters
-    binding.pry
-    Meal.all.select {|y| y.waiter}
+    meals.map {|y| y.waiter}
   end
 end
