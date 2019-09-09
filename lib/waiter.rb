@@ -1,3 +1,4 @@
+binding'pry'
 class Waiter
   attr_accessor :name, :years
   @@all=[]
@@ -17,5 +18,9 @@ class Waiter
 
  def meals
    Meal.all.select {|x| x.waiter==self}
+ end
+
+ def best_tipper
+
  end
 end
